@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <style>
+        body {
+            font-family: 'Karma', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .contact-section {
+            background-color: #e0e0e0;
+            padding: 50px 20px;
+            margin-top: 50px;
+        } 
+
+        .contact-section h3 {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .contact-section hr {
+            margin: 20px auto;
+            width: 50%;
+            border: 1px solid #333;
+        }
+
+        .contact-section p {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        .contact-section form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-section .form-section {
+            margin-bottom: 20px;
+        }
+
+        .contact-section label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-section input[type="text"], 
+        .contact-section input[type="email"], 
+        .contact-section input[type="tel"], 
+        .contact-section input[type="date"], 
+        .contact-section textarea, 
+        .contact-section input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-section button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Contact Section -->
+<div class="contact-section" id="contact">
+    <h3>User Info.</h3>
+    <hr>
+    <p>Enter the following details below</p>
+
+    <form action="navbar.html" target="_blank">
+        <div class="form-section">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required>
+        </div>
+        <div class="form-section">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+        </div>
+        <div class="form-section">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="Phone" required>
+        </div>
+        <div class="form-section">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="Address" required>
+        </div>
+        <div class="form-section">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="Company" required>
+        </div>
+        <div class="form-section">
+            <label for="job-title">Job Title</label>
+            <input type="text" id="job-title" name="JobTitle" required>
+        </div>
+        <div class="form-section">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="DateOfBirth" required>
+        </div>
+        <div class="form-section">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="Subject" required>
+        </div>
+        <div class="form-section">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" required></textarea>
+        </div>
+        <div class="form-section">
+            <label for="file">Upload File</label>
+            <input type="file" id="file" name="File" required>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+</body>
+</html>
+
